@@ -7,3 +7,13 @@ html, body {
   padding: 0;
   overflow-x: hidden; /* gorizontal oq joyni yo‘q qiladi */
 }
+.swiper-button-prev,
+.swiper-button-next {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

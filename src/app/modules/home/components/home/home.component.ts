@@ -65,16 +65,21 @@ export class HomeComponent  implements AfterViewInit {
       image: "assets/image/slider_6.jpg"
     }
   ];
-  ngAfterViewInit(): void {
-    const swiperEl: any = document.querySelector('swiper-container');
+ngAfterViewInit(): void {
+  const swiperEl: any = document.querySelector('swiper-container');
 
-    // DOM yuklangandan keyin to‘g‘ri tugmalarni berish
-    swiperEl.navigation = {
-      nextEl: document.getElementById('custom-next'),
-      prevEl: document.getElementById('custom-prev'),
+  if (swiperEl) {
+    swiperEl.params = {
+      ...swiperEl.params,
+      navigation: {
+        nextEl: '#custom-next',
+        prevEl: '#custom-prev',
+      },
     };
 
-    swiperEl.initialize(); // bu MUHIM!
+    swiperEl.initialize();
   }
+}
+
 
 }

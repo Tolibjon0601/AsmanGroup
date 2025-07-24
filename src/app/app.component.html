@@ -1,5 +1,4 @@
-<!-- Splash Screen with Video -->
-<div
+<!-- <div
   *ngIf="showIntroVideo"
   class="fixed inset-0 z-[9999] flex items-center justify-center bg-black transition-opacity duration-700"
 >
@@ -14,7 +13,7 @@
   ></video>
 </div>
 
-<!-- Main Application View -->
 <div *ngIf="!showIntroVideo">
   <router-outlet></router-outlet>
-</div>
+</div> -->
+<router-outlet></router-outlet>

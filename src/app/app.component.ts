@@ -13,18 +13,22 @@ export class AppComponent implements AfterViewInit {
   showIntroVideo = true;
 
   @ViewChild('introVideo') introVideoRef!: ElementRef<HTMLVideoElement>;
-
   ngAfterViewInit(): void {
     const video = this.introVideoRef?.nativeElement;
     if (video) {
-      video
-        .play()
-        .catch((err) => {
-          console.warn('Video autoplay failed:', err);
-          this.showIntroVideo = false;
+      const tryPlay = () => {
+        video.play().then(() => {
+          console.log('Video started');
+        }).catch((err) => {
+          console.warn('Retrying video play in 300ms');
+          setTimeout(tryPlay, 300); // 0.3s interval bilan qayta urinish
         });
+      };
+      tryPlay();
     }
   }
+
+
 
   onVideoEnd(): void {
     this.showIntroVideo = false;

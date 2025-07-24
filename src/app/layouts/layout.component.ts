@@ -8,25 +8,38 @@ import { RouterModule } from '@angular/router';
   selector: 'app-layout',
   imports: [CommonModule, HeaderComponent, FooterComponent, RouterModule],
   template: `
-    <style>
-      app-layout {
-        }
-    </style>
+  <style>
+    app-layout {
+      display: block;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
 
+    .container {
+      @apply max-w-7xl mx-auto px-4 w-full;
+    }
 
-    <ng-container>
+    main {
+      flex: 1 1 auto;
+    }
+  </style>
 
-      <div class="container">
+  <ng-container>
+    <div class="container">
+      <app-header></app-header>
+    </div>
 
-        <app-header></app-header>
-        <main  >
-          <router-outlet></router-outlet>
-          </main>
+    <main class="flex-1">
+      <router-outlet></router-outlet>
+    </main>
 
-          <app-footer></app-footer>
-      </div>
-    </ng-container>
-  `,
+    <div class="flex-1">
+      <app-footer></app-footer>
+    </div>
+  </ng-container>
+`,
+
 })
 export class LayoutComponent {
 }

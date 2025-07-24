@@ -169,6 +169,8 @@
   </div>
 </section>
 <div class="relative w-full h-screen">
+  <div class="relative w-screen h-screen">
+
   <swiper-container
     loop="true"
     autoplay-delay="4000"
@@ -178,7 +180,7 @@
     <swiper-slide *ngFor="let slide of slidessecond">
       <div class="w-full h-full grid grid-cols-1 lg:grid-cols-2">
         <div
-          class="h-full bg-cover bg-center"
+          class="w-full h-full bg-cover bg-center relative"
           [ngStyle]="{ 'background-image': 'url(' + slide.image + ')' }"
         ></div>
 
@@ -200,23 +202,8 @@
       </div>
     </swiper-slide>
   </swiper-container>
+</div>
 
-  <div
-    class="absolute top-1/2 right-6 z-50 flex flex-col gap-4 -translate-y-1/2"
-  >
-    <button
-      id="custom-next"
-      class="bg-white text-black w-10 h-10 flex items-center justify-center rounded shadow hover:bg-gray-100"
-    >
-      <i class="fa-solid fa-chevron-right"></i>
-    </button>
-    <button
-      id="custom-prev"
-      class="bg-white text-black w-10 h-10 flex items-center justify-center rounded shadow hover:bg-gray-100"
-    >
-      <i class="fa-solid fa-chevron-left"></i>
-    </button>
-  </div>
 </div>
 <section class="w-full bg-white pt-12 px-4 lg:px-20">
   <div

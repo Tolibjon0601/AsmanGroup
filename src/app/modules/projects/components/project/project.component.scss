@@ -48,10 +48,3 @@
 .fade-up {
   animation: fadeUp 1s ease-out both;
 }
-swiper-container::part(container) {
-  height: 100%;
-}
-
-swiper-slide {
-  position: relative;
-}

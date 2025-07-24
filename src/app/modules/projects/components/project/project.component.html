@@ -1,153 +1,153 @@
+<!-- Hero Banner -->
 <div
-  class="h-screen w-full bg-cover bg-center flex items-center justify-center"
-  style="background-image: url('assets/image/project.jpg');"
+  class="h-screen w-full bg-cover bg-center flex items-center justify-center relative"
+  style="background-image: url('assets/image/project.jpg')"
 >
+  <div class="absolute inset-0 bg-black/50"></div>
   <div class="relative z-10 text-center px-4">
     <h1
-      class="text-5xl md:text-6xl font-bold text-white mb-4 opacity-0 animate-fade-in-right"
+      class="text-5xl md:text-6xl font-bold text-white mb-4 animate-fade-in-right"
     >
       Orzular Maskani
     </h1>
     <p
-      class="text-xl font-bold text-white uppercase tracking-widest opacity-0 animate-fade-in-left delay-300"
+      class="text-xl font-bold text-white uppercase tracking-widest animate-fade-in-left delay-300"
     >
       Business class by Asman Group
     </p>
   </div>
 </div>
-<section class="py-20 bg-[#0A506D]">
-  <div class="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center gap-10">
 
-    <!-- Text Content -->
-    <div class="lg:w-1/2 space-y-6 text-white text-left fade-up">
-      <h2 class="text-3xl md:text-4xl font-bold tracking-[0.2em] uppercase">LOYIHA HAQIDA</h2>
+<!-- About Section -->
+<section class="py-20 bg-[#0A506D]">
+  <div
+    class="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center gap-10"
+  >
+    <!-- Text -->
+    <div class="lg:w-1/2 space-y-6 text-white">
+      <h2 class="text-3xl md:text-4xl font-bold tracking-[0.2em] uppercase">
+        LOYIHA HAQIDA
+      </h2>
       <div class="space-y-4">
         <p>
           "Orzular Maskani" – har bir chiziqda sof g'oyaning mujassamlanishi!
         </p>
         <p>
-          Bu yerda har bir detal – dastlabki g'oyadan tortib, benuqson ijrosigacha – zargarlik aniqligi bilan o'ylangan.
-          Biz orzuingizdagi uyni quramiz, bu yerda mahorat va ilhom birlashib, ideal makonni yaratadi.
-
-          "Orzular Maskani" – orzudan tug'ilgan va mukammallik bilan ro'yobga chiqqan turar-joy majmuasidir.
+          Bu yerda har bir detal – dastlabki g'oyadan tortib, benuqson
+          ijrosigacha – zargarlik aniqligi bilan o'ylangan. Biz orzuingizdagi
+          uyni quramiz, bu yerda mahorat va ilhom birlashib, ideal makonni
+          yaratadi. "Orzular Maskani" – orzudan tug'ilgan va mukammallik bilan
+          ro'yobga chiqqan turar-joy majmuasidir.
         </p>
       </div>
-
-      <!-- Numbers -->
-      <div class="flex items-center justify-start gap-2 font-semibold">
-        <div class="w-1/2 sm:w-1/4">
+      <!-- Stats -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 font-semibold">
+        <div>
           <div class="text-3xl font-bold">8</div>
           <div>Bloklar</div>
         </div>
-        <div class="w-1/2 sm:w-1/4">
+        <div>
           <div class="text-3xl font-bold">776</div>
           <div>Xonadonlar</div>
         </div>
-        <div class="w-1/2 sm:w-1/4">
+        <div>
           <div class="text-3xl font-bold">3</div>
           <div>Navbatlar</div>
         </div>
-        <div class="w-1/2 sm:w-1/4">
+        <div>
           <div class="text-3xl font-bold">30 000</div>
           <div>m², loyiha maydoni</div>
         </div>
       </div>
     </div>
-
     <!-- Image -->
-    <div class="lg:w-3/4 h-full fade-up">
-      <img src="assets/image/footer-bg.jpg" alt="Orzular Maskani"
-        class="rounded-lg shadow-lg w-full h-full lg:h-[500px] object-cover transform transition-transform duration-500 hover:scale-105">
+    <div class="lg:w-3/4 fade-up">
+      <img
+        src="assets/image/footer-bg.jpg"
+        alt="Orzular Maskani"
+        class="rounded-lg shadow-lg w-full h-full lg:h-[500px] object-cover transition-transform duration-500 hover:scale-105"
+      />
     </div>
-
   </div>
-
 </section>
 
-
-
+<!-- Swiper Section -->
 <swiper-container
   loop="true"
   autoplay-delay="4000"
   speed="1500"
   autoplay="true"
-  class="w-full h-[600px] relative overflow-hidden"
+  observer="true"
+  resize-observer="true"
   effect="fade"
+  class="w-full h-[600px] relative overflow-hidden"
 >
-
   <swiper-slide *ngFor="let slide of slidessecond">
-    <!-- Blur Background -->
     <div
-      class="absolute inset-0 bg-cover bg-center filter blur-sm scale-110 transition-opacity duration-1000"
-      [ngStyle]="{ 'background-image': 'url(' + slide.image + ')' }"
-    ></div>
-
-    <!-- Overlay for solid background and content -->
-    <div
-    class="relative z-10 w-full h-full grid grid-cols-1 lg:grid-cols-2 text-white"
-  >
-
-    <!-- Blur background image -->
-    <div
-      class="absolute inset-0 -z-10 bg-cover bg-center blur-sm brightness-50"
-      [ngStyle]="{ 'background-image': 'url(' + slide.image + ')' }"
-    ></div>
-
-    <div class="hidden lg:flex items-center justify-center">
-      <div class="max-w-[800px] p-6  max-h-[800px] w-full h-full">
+      class="relative w-full h-full grid grid-cols-1 lg:grid-cols-2 text-white"
+    >
+      <!-- Blurred Background -->
+      <div
+        class="absolute inset-0 -z-10 bg-cover bg-center blur-sm brightness-50"
+        [ngStyle]="{ 'background-image': 'url(' + slide.image + ')' }"
+      ></div>
+      <!-- Image Side -->
+      <div class="hidden lg:flex items-center justify-center">
         <img
           [src]="slide.image"
           alt="Stat Image"
-          class="w-full h-full   object-contain"
+          class="max-w-[800px] w-full h-full object-contain p-6"
         />
       </div>
-    </div>
-
-    <!-- O'ng blok: matnlar -->
-    <div class="flex flex-col justify-center px-8 lg:px-20 py-10">
-      <span class="text-sm text-[#C4751A] uppercase font-semibold">
-        ORZULAR MASKANI
-      </span>
-      <div class="mt-6 text-lg">
-        <p class="text-5xl font-bold">{{ slide.stats }}</p>
-        <p class="text-white text-base max-w-md mt-2">
-          {{ slide.statsDescription }}
-        </p>
+      <!-- Text Side -->
+      <div class="flex flex-col justify-center px-8 lg:px-20 py-10">
+        <span class="text-sm text-[#C4751A] uppercase font-semibold"
+          >ORZULAR MASKANI</span
+        >
+        <div class="mt-6 text-lg">
+          <p class="text-5xl font-bold">{{ slide.stats }}</p>
+          <p class="text-white text-base max-w-md mt-2">
+            {{ slide.statsDescription }}
+          </p>
+        </div>
       </div>
     </div>
-  </div>
-
-
   </swiper-slide>
 </swiper-container>
 
-<ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-6 max-w-7xl mx-auto">
-  <li *ngFor="let apt of apartments"
-      class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-
-      <p-image
+<!-- Apartments List -->
+<ul
+  class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-6 max-w-7xl mx-auto"
+>
+  <li
+    *ngFor="let apt of apartments"
+    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"
+  >
+    <p-image
       [src]="apt.image"
       [preview]="true"
       alt="Apartment Image"
-      class="relative block w-full h-64 rounded-md overflow-hidden group"
+      class="block w-full h-64 rounded-md group overflow-hidden"
     >
       <ng-template #indicator>
         <div
-          class="absolute inset-0 bg-black/50 bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
         >
           <i class="pi pi-search text-white text-2xl"></i>
         </div>
       </ng-template>
-
       <ng-template #image>
         <img
           [src]="apt.image"
           [alt]="'Apartment ' + apt.number"
-          class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
+          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
       </ng-template>
-
-      <ng-template #preview let-style="style" let-previewCallback="previewCallback">
+      <ng-template
+        #preview
+        let-style="style"
+        let-previewCallback="previewCallback"
+      >
         <img
           [src]="apt.image"
           [alt]="'Apartment ' + apt.number"
@@ -157,60 +157,52 @@
         />
       </ng-template>
     </p-image>
-
-
+    <!-- Info -->
     <div class="p-6">
-      <ul class="space-y-3">
-        <li class="flex justify-between text-sm border-b border-dotted border-gray-300 pb-2">
-          <span class="text-gray-600">Kvartira raqami</span>
-          <strong class="text-gray-900">{{ apt.number }}</strong>
+      <ul class="space-y-3 text-sm text-gray-700">
+        <li class="flex justify-between border-b border-dotted pb-2">
+          <span>Kvartira raqami</span><strong>{{ apt.number }}</strong>
         </li>
-        <li class="flex justify-between border-b border-dotted border-gray-300 pb-2">
-          <span class="text-gray-600">Maydon</span>
-          <strong class="text-gray-900">{{ apt.area }}</strong>
+        <li class="flex justify-between border-b border-dotted pb-2">
+          <span>Maydon</span><strong>{{ apt.area }}</strong>
         </li>
-        <li class="flex justify-between border-b border-dotted border-gray-300 pb-2">
-          <span class="text-gray-600">Xonalar</span>
-          <strong class="text-gray-900">{{ apt.rooms }}</strong>
+        <li class="flex justify-between border-b border-dotted pb-2">
+          <span>Xonalar</span><strong>{{ apt.rooms }}</strong>
         </li>
-        <li class="flex justify-between border-b border-dotted border-gray-300 pb-2">
-          <span class="text-gray-600">Qavat</span>
-          <strong class="text-gray-900">{{ apt.floor }}</strong>
+        <li class="flex justify-between border-b border-dotted pb-2">
+          <span>Qavat</span><strong>{{ apt.floor }}</strong>
         </li>
-        <li class="flex justify-between border-b border-dotted border-gray-300 pb-2">
-          <span class="text-gray-600">Topshirish yili</span>
-          <strong class="text-gray-900">{{ apt.year }}</strong>
+        <li class="flex justify-between border-b border-dotted pb-2">
+          <span>Topshirish yili</span><strong>{{ apt.year }}</strong>
         </li>
         <li class="flex justify-between pb-2">
-          <span class="text-gray-600">Loyiha</span>
-          <strong class="text-gray-900">
-            <a class="text-blue-600 hover:underline">
-              {{ apt.project.name }}
-            </a>
-          </strong>
+          <span>Loyiha</span
+          ><strong
+            ><a class="text-blue-600 hover:underline">{{
+              apt.project.name
+            }}</a></strong
+          >
         </li>
       </ul>
-
       <a
-      routerLink="/about"
-      class="flex items-center justify-center text-[#C4751A] hover:underline font-medium"
-    >
-      Batafsil
-      <svg
-        class="w-4 h-4 ml-1"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        viewBox="0 0 24 24"
+        routerLink="/about"
+        class="mt-4 inline-flex items-center text-[#C4751A] hover:underline font-medium"
       >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M5 12h14M12 5l7 7-7 7"
-        />
-      </svg>
-    </a>
-
+        Batafsil
+        <svg
+          class="w-4 h-4 ml-1"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5 12h14M12 5l7 7-7 7"
+          />
+        </svg>
+      </a>
     </div>
   </li>
 </ul>

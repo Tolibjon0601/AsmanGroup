@@ -26,17 +26,18 @@
       >{{ 'nav.about' | translate }}</a
     >
     <a
+    routerLink="/project"
+    routerLinkActive="text-[#C4751A] font-bold"
+    class="hover:text-[#C4751A] transition"
+    >{{ 'nav.projects' | translate }}</a
+  >
+    <a
       routerLink="/contact"
       routerLinkActive="text-[#C4751A] font-bold"
       class="hover:text-[#C4751A] transition"
       >{{ 'nav.contact' | translate }}</a
     >
-    <a
-      routerLink="/project"
-      routerLinkActive="text-[#C4751A] font-bold"
-      class="hover:text-[#C4751A] transition"
-      >{{ 'nav.projects' | translate }}</a
-    >
+
     <div class="relative hidden lg:block">
       <button
         class="flex items-center gap-2 bg-white text-black px-3 py-1 rounded cursor-pointer"

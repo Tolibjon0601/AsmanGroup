@@ -29,7 +29,6 @@ export class AppComponent implements AfterViewInit {
           });
       };
 
-      tryPlay(); // Start trying to play video
     }
   }
 

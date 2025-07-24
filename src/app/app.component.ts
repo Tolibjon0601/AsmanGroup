@@ -5,7 +5,7 @@ import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterModule,CommonModule],
+  imports: [RouterModule, CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
@@ -13,22 +13,25 @@ export class AppComponent implements AfterViewInit {
   showIntroVideo = true;
 
   @ViewChild('introVideo') introVideoRef!: ElementRef<HTMLVideoElement>;
+
   ngAfterViewInit(): void {
     const video = this.introVideoRef?.nativeElement;
+
     if (video) {
       const tryPlay = () => {
-        video.play().then(() => {
-          console.log('Video started');
-        }).catch((err) => {
-          console.warn('Retrying video play in 300ms');
-          setTimeout(tryPlay, 300); // 0.3s interval bilan qayta urinish
-        });
+        video.play()
+          .then(() => {
+            console.log('Video started successfully');
+          })
+          .catch((err) => {
+            console.warn('Retrying video play in 300ms:', err);
+            setTimeout(tryPlay, 300); // Retry every 300ms until allowed
+          });
       };
-      tryPlay();
+
+      tryPlay(); // Start trying to play video
     }
   }
-
-
 
   onVideoEnd(): void {
     this.showIntroVideo = false;

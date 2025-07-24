@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { AfterViewInit, CUSTOM_ELEMENTS_SCHEMA, Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { ImageModule } from 'primeng/image';
 
 @Component({
   selector: 'app-project',
-  imports: [CommonModule,RouterLink],
+  imports: [CommonModule,RouterLink,ImageModule],
   templateUrl: './project.component.html',
   styleUrl: './project.component.scss',
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -61,7 +62,7 @@ export class ProjectComponent implements AfterViewInit {
 
   apartments = [
     {
-      image: '../../../../../assets/image/apartment_img_1.jpg',
+      image: 'assets/image/apartment_img_1.jpg',
       number: '11',
       area: '52.6 м²',
       rooms: 1,
@@ -69,11 +70,10 @@ export class ProjectComponent implements AfterViewInit {
       year: 2026,
       project: {
         name: 'Orzular Maskani',
-        url: 'https://mbc.uz/uz/project/regnum-plaza'
       }
     },
     {
-      image: '../../../../../assets/image/apartment_img_2.jpg',
+      image: 'assets/image/apartment_img_2.jpg',
       number: '12',
       area: '70.5 м²',
       rooms: 2,
@@ -81,11 +81,10 @@ export class ProjectComponent implements AfterViewInit {
       year: 2026,
       project: {
         name: 'Orzular Maskani',
-        url: 'https://mbc.uz/uz/project/orzu-city'
       }
     },
     {
-      image: '../../../../../assets/image/apartment_img_3.jpg',
+      image: 'assets/image/apartment_img_3.jpg',
       number: '13',
       area: '76.00 м²',
       rooms: 2,
@@ -93,11 +92,10 @@ export class ProjectComponent implements AfterViewInit {
       year: 2025,
       project: {
         name: 'Orzular Maskani',
-        url: 'https://mbc.uz/uz/project/zamin-residence'
       }
     },
     {
-      image: '../../../../../assets/image/apartment_img_4.jpg',
+      image: 'assets/image/apartment_img_4.jpg',
       number: '13',
       area: '89.2 м²',
       rooms: 2,
@@ -105,9 +103,10 @@ export class ProjectComponent implements AfterViewInit {
       year: 2025,
       project: {
         name: 'Orzular Maskani',
-        url: 'https://mbc.uz/uz/project/zamin-residence'
       }
     }
+
+
   ];
 
 }

@@ -125,9 +125,39 @@
   <li *ngFor="let apt of apartments"
       class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
 
-    <div class="h-68 bg-gray-200 overflow-hidden">
-      <img class="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110" [src]="apt.image" [alt]="'Apartment ' + apt.number" />
-    </div>
+      <p-image
+      [src]="apt.image"
+      [preview]="true"
+      alt="Apartment Image"
+      class="relative block w-full h-64 rounded-md overflow-hidden group"
+    >
+      <ng-template #indicator>
+        <div
+          class="absolute inset-0 bg-black/50 bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        >
+          <i class="pi pi-search text-white text-2xl"></i>
+        </div>
+      </ng-template>
+
+      <ng-template #image>
+        <img
+          [src]="apt.image"
+          [alt]="'Apartment ' + apt.number"
+          class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
+        />
+      </ng-template>
+
+      <ng-template #preview let-style="style" let-previewCallback="previewCallback">
+        <img
+          [src]="apt.image"
+          [alt]="'Apartment ' + apt.number"
+          [style]="style"
+          class="max-w-2xl rounded-lg max-h-[80vh] mx-auto object-contain"
+          (click)="previewCallback()"
+        />
+      </ng-template>
+    </p-image>
+
 
     <div class="p-6">
       <ul class="space-y-3">
@@ -154,7 +184,7 @@
         <li class="flex justify-between pb-2">
           <span class="text-gray-600">Loyiha</span>
           <strong class="text-gray-900">
-            <a [href]="apt.project.url" target="_blank" class="text-blue-600 hover:underline">
+            <a class="text-blue-600 hover:underline">
               {{ apt.project.name }}
             </a>
           </strong>

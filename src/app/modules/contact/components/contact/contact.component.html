@@ -1,0 +1,61 @@
+<!-- Sarlavhali qoplovchi rasm -->
+<div class="relative w-full h-[60vh] bg-cover bg-center" style="background-image: url('assets/image/slider_1.jpg');">
+  <div class="absolute inset-0 backdrop-blur-xs bg-black/40"></div>
+
+  <div class="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4">
+    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Biz bilan bog'lanish</h1>
+    <div class="flex items-center gap-2 text-sm text-gray-300">
+      <a href="/" class="hover:underline">Bosh sahifa</a>
+      <span>/</span>
+      <span class="text-white">Aloqa</span>
+    </div>
+  </div>
+</div>
+
+<!-- Aloqa Formasi -->
+<section class="relative py-20 px-4 bg-cover bg-center" style="background-image: url('assets/image/slider_3.jpg');">
+  <div class="absolute inset-0 bg-gradient-to-tr from-[#C4751A]/90 to-[#BDA589]/85 z-0"></div>
+
+  <div class="relative z-10 max-w-2xl mx-auto">
+    <div class="bg-white/90 shadow-2xl rounded-xl p-8 lg:p-10 backdrop-blur-md">
+      <!-- FormSubmit form -->
+      <form action="https://formsubmit.io/send/your-email@example.com" method="POST" class="space-y-6">
+        <!-- Prevent bot spam -->
+        <input type="text" name="_formsubmit_id" style="display:none">
+        <input type="hidden" name="_redirect" value="https://Asmangroup.uz/home">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <label class="block text-sm font-medium text-gray-700">Ism</label>
+            <input type="text" name="Ism" placeholder="Ismingiz" required
+              class="mt-1 w-full border border-gray-300 rounded-md px-4 py-2 focus:ring-[#1d3557] focus:border-[#1d3557]">
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700">Telefon</label>
+            <input type="tel" name="Telefon" placeholder="+998 __ ___ __ __" required
+              class="mt-1 w-full border border-gray-300 rounded-md px-4 py-2 focus:ring-[#1d3557] focus:border-[#1d3557]">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Email</label>
+          <input type="email" name="Email" placeholder="Email (ixtiyoriy)"
+            class="mt-1 w-full border border-gray-300 rounded-md px-4 py-2 focus:ring-[#1d3557] focus:border-[#1d3557]">
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Xabar</label>
+          <textarea name="Xabar" rows="5" placeholder="Xabaringizni yozing" required
+            class="mt-1 w-full border border-gray-300 rounded-md px-4 py-2 focus:ring-[#1d3557] focus:border-[#1d3557]"></textarea>
+        </div>
+
+        <div class="text-center lg:text-right">
+          <button type="submit"
+            class="bg-[#1d3557] text-white px-6 py-2 rounded-md hover:bg-[#16324e] transition-all font-semibold shadow-lg">
+            Yuborish
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

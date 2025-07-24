@@ -1,0 +1,393 @@
+<swiper-container
+  loop="true"
+  autoplay-delay="4000"
+  class="w-full h-screen custom-swiper"
+  speed="1500"
+  pagination="false"
+
+  autoplay="true"
+  autoplay-disable-on-interaction="false"
+  pagination-clickable="true"
+
+  effect="slide"
+>
+  <swiper-slide *ngFor="let slide of slides">
+    <div
+      class="w-full h-full bg-cover bg-center relative"
+      [ngStyle]="{ 'background-image': 'url(' + slide.image + ')' }"
+    >
+      <div class="absolute inset-0 bg-black/40 flex flex-col justify-center px-5 md:px-20">
+        <div class="text-white z-40 max-w-[850px] mt-32">
+          <h2 class="text-4xl md:text-6xl font-bold mb-6">{{ slide.title }}</h2>
+          <button class="bg-white text-black px-6 py-3 rounded">{{ slide.button }}</button>
+        </div>
+      </div>
+    </div>
+  </swiper-slide>
+</swiper-container>
+
+
+<section class="w-full bg-white py-16 px-4 lg:px-20">
+  <div class="max-w-7xl mx-auto">
+    <!-- Upper part: Title and text -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-16 items-center">
+      <div>
+        <span class="text-sm text-[#C4751A] uppercase font-semibold"
+          >Biz haqimizda</span
+        >
+        <h2 class="text-lg md:text-xl font-bold mt-2 mb-4 text-gray-800">
+          ASMAN GROUP – bu nafaqat uy quruvchi kompaniya, bu – yuksak did,
+          aniqlik va ishonch asosida qurilgan hayot tarzi. Brend 2025-yilda
+          zamonaviy, xavfsiz va estetik uy-joylarga talab ortib borayotgan
+          davrda tashkil etilgan. ASMAN GROUP boshidan boshlab bitta aniq
+          tamoyilga amal qilgan: uy – bu faqatgina devor va tom emas, balki
+          orzular poydevori.
+        </h2>
+      </div>
+      <div>
+        <p class="text-gray-600 text-normal leading-relaxed">
+          Brend nomi — “ASMAN”, turkiy tillarda “osmon” ma’nosini bildiradi. Bu
+          so’z biz uchun shunchaki nom emas — bu falsafa. Biz qurayotgan har bir
+          uy osmon kabi keng, yorugʻ va ishonchli boʻlishi kerak. Har bir detal
+          — tashqi fasad dizaynidan tortib ichki rejalashtirishgacha — asosiy,
+          funksional va didli boʻlishi shart. Komfort darajasidagi turar-joy
+          majmualari, Premium darajadagi loyihalari, shuningdek tijoriy (savdo)
+          ko‘chmas mulk – qurilishga doir barcha bozor segmentlarida
+          developmentning to’liq siklini amalga oshirib kelmoqda.
+        </p>
+      </div>
+    </div>
+
+    <!-- Bottom part: 3 info cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Card 1 -->
+      <div class="transition text-center">
+        <img
+          src="https://bm-group.uz/wp-content/uploads/2019/10/development_1.png"
+          alt="Kompaniya yutuqlari"
+          class="w-48 h-auto mx-auto mb-4"
+        />
+        <h3 class="text-xl font-bold text-[#C4751A] mb-2">
+          <a routerLink="about">Kompaniya yutuqlari</a>
+        </h3>
+        <p class="text-gray-600 mb-4">
+          BM GROUP, nafaqat mintaqada balki O'zbekiston ko'chmas mulk bozorida
+          o'zining nufuzli mavqeini saqlab qolishga, balki asosiy novator
+          bo'lishga ham intiladi.
+        </p>
+        <a
+          routerLink="about"
+          class="inline-flex items-center text-[#C4751A] hover:underline font-medium"
+        >
+          Batafsil
+          <svg
+            class="w-4 h-4 ml-1"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M5 12h14M12 5l7 7-7 7"
+            />
+          </svg>
+        </a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="text-center">
+        <img
+          src="https://bm-group.uz/wp-content/uploads/2019/10/development_2.png"
+          alt="Bizning maqsad"
+          class="w-48 h-auto mx-auto mb-4"
+        />
+        <h3 class="text-xl font-bold text-[#C4751A] mb-2">
+          <a routerLink="about">Bizning maqsad</a>
+        </h3>
+        <p class="text-gray-600 mb-4">
+          Biz hamisha faqat oldinga – istiqbolga intilamiz, takomillashamiz va
+          shubxasiz rivojlanamiz.
+        </p>
+        <a
+          routerLink="about"
+          class="inline-flex items-center text-[#C4751A] hover:underline font-medium"
+        >
+          Batafsil
+          <svg
+            class="w-4 h-4 ml-1"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M5 12h14M12 5l7 7-7 7"
+            />
+          </svg>
+        </a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="text-center">
+        <img
+          src="https://bm-group.uz/wp-content/uploads/2019/10/investor.png"
+          alt="Sertifikat"
+          class="w-48 mx-auto h-auto mb-4"
+        />
+        <h3 class="text-xl font-bold text-[#C4751A] mb-2">
+          <a routerLink="about">Sertifikat</a>
+        </h3>
+        <p class="text-gray-600 mb-4">
+          O'zbekiston developerlari orasida biz birinchilardan bo'lib 5 marotaba
+          Muvofiqlik Sertifikati oldik.
+        </p>
+        <a
+          routerLink="about"
+          class="inline-flex items-center text-[#C4751A] hover:underline font-medium"
+        >
+          Batafsil
+          <svg
+            class="w-4 h-4 ml-1"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M5 12h14M12 5l7 7-7 7"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="relative w-full h-screen">
+  <swiper-container
+    loop="true"
+    autoplay-delay="4000"
+    class="w-full h-full"
+    speed="1500"
+  >
+    <swiper-slide *ngFor="let slide of slidessecond">
+      <div class="w-full h-full grid grid-cols-1 lg:grid-cols-2">
+        <div
+          class="h-full bg-cover bg-center"
+          [ngStyle]="{ 'background-image': 'url(' + slide.image + ')' }"
+        ></div>
+
+        <div
+          class="bg-[#0A506D] text-white flex flex-col justify-center px-8 lg:px-20 py-10"
+        >
+          <span class="text-sm text-[#C4751A] uppercase font-semibold"
+            >ORZULAR MASKANI</span
+          >
+
+          <!-- Statistika -->
+          <div class="mt-6 text-lg">
+            <p class="text-5xl font-bold">{{ slide.stats }}</p>
+            <p class="text-white text-base max-w-md mt-2">
+              {{ slide.statsDescription }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </swiper-slide>
+  </swiper-container>
+
+  <div
+    class="absolute top-1/2 right-6 z-50 flex flex-col gap-4 -translate-y-1/2"
+  >
+    <button
+      id="custom-next"
+      class="bg-white text-black w-10 h-10 flex items-center justify-center rounded shadow hover:bg-gray-100"
+    >
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+    <button
+      id="custom-prev"
+      class="bg-white text-black w-10 h-10 flex items-center justify-center rounded shadow hover:bg-gray-100"
+    >
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+  </div>
+</div>
+<section class="w-full bg-white pt-12 px-4 lg:px-20">
+  <div
+    class="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6"
+  >
+    <!-- Chap taraf: Sarlavha -->
+    <div>
+      <span class="block text-sm text-[#C4751A] font-semibold uppercase mb-2"
+        >Obyektlar</span
+      >
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800">
+        Turar-joy komplekslari
+      </h2>
+    </div>
+  </div>
+</section>
+<section class="w-full px-4 lg:px-20 py-12 bg-white">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+    <!-- Card 1 -->
+    <a
+      href=""
+      class="relative group h-[400px] rounded-xl overflow-hidden shadow-lg"
+    >
+      <div
+        class="absolute inset-0 bg-cover bg-center transition-transform duration-700 scale-100 group-hover:scale-105"
+        style="background-image: url('assets/image/slider_2.jpg')"
+      ></div>
+      <div class="absolute inset-0 bg-black/40"></div>
+
+      <div
+        class="relative z-10 h-full flex flex-col justify-end p-6 text-white"
+      >
+        <h2 class="text-2xl font-bold mb-2">Orzular Maskani</h2>
+        <p class="text-sm mb-4">Chilonzor tumani, Qatortol ko’chasi</p>
+        <div
+          class="text-3xl font-bold text-white opacity-60 absolute top-6 right-6"
+        >
+          01
+        </div>
+      </div>
+    </a>
+
+    <!-- Card 2 -->
+    <a
+      href=""
+      class="relative group h-[400px] rounded-xl overflow-hidden shadow-lg"
+    >
+      <div
+        class="absolute inset-0 bg-cover bg-center transition-transform duration-700 scale-100 group-hover:scale-105"
+        style="background-image: url('assets/image/footer-bg.jpg')"
+      ></div>
+      <div class="absolute inset-0 bg-black/40"></div>
+
+      <div
+        class="relative z-10 h-full flex flex-col justify-end p-6 text-white"
+      >
+        <h2 class="text-2xl font-bold mb-2">Orzular Maskani</h2>
+        <p class="text-sm mb-4">Chilonzor tumani Qatortol ko'chasi</p>
+        <div
+          class="text-3xl font-bold text-white opacity-60 absolute top-6 right-6"
+        >
+          02
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
+<section class="w-full bg-white py-16 px-4 lg:px-20">
+  <div class="max-w-7xl mx-auto">
+    <!-- Title -->
+    <div class="text-center mb-12">
+      <span class="text-sm uppercase text-[#C4751A] font-semibold"
+        >Nima uchun bizni tanlash kerak</span
+      >
+      <h2 class="text-3xl md:text-4xl font-bold mt-2 text-gray-800">
+        Bizning afzalliklarimiz
+      </h2>
+    </div>
+
+    <!-- Icon Boxes -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Box 1 -->
+      <div
+        class="bg-white p-6 shadow hover:shadow-lg transition rounded-xl text-center"
+      >
+        <div class="text-4xl text-[#C4751A] mb-4">
+          <i class="fas fa-city"></i>
+          <!-- Infratuzilma -->
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Infratuzilma</h3>
+        <p class="text-gray-600 text-sm">
+          Bizning uylarda barcha yutuqlarini o'zida jamlagan mutlaqo yangi va
+          zamonaviy shahar infratuzilmasi rivojlanmoqda.
+        </p>
+      </div>
+
+      <!-- Box 2 -->
+      <div
+        class="bg-white p-6 shadow hover:shadow-lg transition rounded-xl text-center"
+      >
+        <div class="text-4xl text-[#C4751A] mb-4">
+          <i class="fas fa-paint-roller"></i>
+          <!-- Dizayn va bezatish -->
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Dizayn va bezatish</h3>
+        <p class="text-gray-600 text-sm">
+          Kirish guruhlarining loyihasi va dizayni butun turar-joy majmuasi
+          arxitekturasining uyg'un davomi va muhiti timsoli bo'lib xizmat
+          qiladi.
+        </p>
+      </div>
+
+      <!-- Box 3 -->
+      <div
+        class="bg-white p-6 shadow hover:shadow-lg transition rounded-xl text-center"
+      >
+        <div class="text-4xl text-[#C4751A] mb-4">
+          <i class="fas fa-user-tie"></i>
+          <!-- Professional xizmatlar -->
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Professional xizmatlar</h3>
+        <p class="text-gray-600 text-sm">
+          Biz har bir mijozga turar joy tanlashda uning imkoniyatlari va
+          istaklarini inobatga olgan holda individual yondoshamiz.
+        </p>
+      </div>
+
+      <!-- Box 4 -->
+      <div
+        class="bg-white p-6 shadow hover:shadow-lg transition rounded-xl text-center"
+      >
+        <div class="text-4xl text-[#C4751A] mb-4">
+          <i class="fas fa-shield-alt"></i>
+          <!-- Xavfsizlik -->
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Xavfsizlik</h3>
+        <p class="text-gray-600 text-sm">
+          24 soatlik videokuzatuv xavfsizlik, tinchlik va osoyishtalikni
+          ta'minlaydi.
+        </p>
+      </div>
+
+      <!-- Box 5 -->
+      <div
+        class="bg-white p-6 shadow hover:shadow-lg transition rounded-xl text-center"
+      >
+        <div class="text-4xl text-[#C4751A] mb-4">
+          <i class="fas fa-child"></i>
+          <!-- O'yin maydoni -->
+        </div>
+        <h3 class="text-xl font-semibold mb-2">O'yin maydoni</h3>
+        <p class="text-gray-600 text-sm">
+          Transport vositalari hovliga kira olmaydi. Bu farzandlaringiz uchun
+          havfsiz o‘yin muhitini ta’minlaydi.
+        </p>
+      </div>
+
+      <!-- Box 6 -->
+      <div
+        class="bg-white p-6 shadow hover:shadow-lg transition rounded-xl text-center"
+      >
+        <div class="text-4xl text-[#C4751A] mb-4">
+          <i class="fas fa-hands-helping"></i>
+          <!-- Shaxsiy xizmatlar -->
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Shaxsiy xizmatlar</h3>
+        <p class="text-gray-600 text-sm">
+          Turar joy uchun shaxsiy xizmatlar (JEK) tashkil etiladi. Bu sizni
+          vaqtingizni tejashga yordam beradi.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -28,7 +28,7 @@ export class AppComponent implements AfterViewInit {
             setTimeout(tryPlay, 300); // Retry every 300ms until allowed
           });
       };
-
+      tryPlay();
     }
   }
 

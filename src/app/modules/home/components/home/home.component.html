@@ -14,7 +14,7 @@
         <div class="absolute inset-0 bg-black/40 flex flex-col justify-center px-5 md:px-20">
           <div class="text-white z-40 max-w-[850px] mt-32">
             <h2 class="text-4xl md:text-6xl font-bold mb-6">{{ slide.title }}</h2>
-            <button class="bg-white text-black px-6 py-3 rounded">{{ slide.button }}</button>
+            <a routerLink="/project" class="bg-white text-black px-6 py-3 rounded">{{ slide.button }}</a>
           </div>
         </div>
       </div>
@@ -224,7 +224,7 @@
   <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
     <!-- Card 1 -->
     <a
-      href=""
+      href="/project"
       class="relative group h-[400px] rounded-xl overflow-hidden shadow-lg"
     >
       <div
@@ -247,7 +247,7 @@
     </a>
 
     <!-- Card 2 -->
-    <a
+    <div
       href=""
       class="relative group h-[400px] rounded-xl overflow-hidden shadow-lg"
     >
@@ -268,7 +268,7 @@
           02
         </div>
       </div>
-    </a>
+    </div>
   </div>
 </section>
 <section class="w-full bg-white py-16 px-4 lg:px-20">

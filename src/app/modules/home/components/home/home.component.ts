@@ -23,17 +23,17 @@ export class HomeComponent  implements AfterViewInit {
     },
     {
       title: 'Orzuyingizdagi xonadonni toping! Bo‘lib-bo‘lib to‘lash imkoniyati mavjud',
-      button: 'Bogʻlanish',
+      button: 'Batafsil maʼlumot',
       image: 'assets/image/slider_3.jpg'
     },
     {
       title: 'Biz bilan barqaror investitsiya va ishonchli uy-joy!',
-      button: 'Konsultatsiya olish',
+      button: 'Batafsil maʼlumot',
       image: 'assets/image/slider_4.jpg'
     },
     {
       title: 'Yangi turar joy majmualari: qulay joylashuv, xavfsizlik va zamonaviylik',
-      button: 'Tafsilotlar',
+      button: 'Batafsil maʼlumot',
       image: 'assets/image/slider_5.jpg'
     }
   ];

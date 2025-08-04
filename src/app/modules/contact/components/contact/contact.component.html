@@ -3,11 +3,11 @@
   <div class="absolute inset-0 backdrop-blur-xs bg-black/40"></div>
 
   <div class="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4">
-    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Biz bilan bog'lanish</h1>
+    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">{{ 'contactPage.title' | translate }}</h1>
     <div class="flex items-center gap-2 text-sm text-gray-300">
-      <a href="/" class="hover:underline">Bosh sahifa</a>
+      <a href="/" class="hover:underline">{{ 'contactPage.home' | translate }}</a>
       <span>/</span>
-      <span class="text-white">Aloqa</span>
+      <span class="text-white">{{ 'contactPage.breadcrumb' | translate }}</span>
     </div>
   </div>
 </div>
@@ -18,41 +18,47 @@
 
   <div class="relative z-10 max-w-2xl mx-auto">
     <div class="bg-white/90 shadow-2xl rounded-xl p-8 lg:p-10 backdrop-blur-md">
-      <!-- FormSubmit form -->
       <form action="https://formsubmit.io/send/your-email@example.com" method="POST" class="space-y-6">
-        <!-- Prevent bot spam -->
         <input type="text" name="_formsubmit_id" style="display:none">
         <input type="hidden" name="_redirect" value="https://Asmangroup.uz/home">
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <label class="block text-sm font-medium text-gray-700">Ism</label>
-            <input type="text" name="Ism" placeholder="Ismingiz" required
+            <label class="block text-sm font-medium text-gray-700">
+              {{ 'contactPage.form.name' | translate }}
+            </label>
+            <input type="text" name="Ism" [placeholder]="'contactPage.form.namePlaceholder' | translate" required
               class="mt-1 w-full border border-gray-300 rounded-md px-4 py-2 focus:ring-[#1d3557] focus:border-[#1d3557]">
           </div>
           <div>
-            <label class="block text-sm font-medium text-gray-700">Telefon</label>
-            <input type="tel" name="Telefon" placeholder="+998 __ ___ __ __" required
+            <label class="block text-sm font-medium text-gray-700">
+              {{ 'contactPage.form.phone' | translate }}
+            </label>
+            <input type="tel" name="Telefon" [placeholder]="'contactPage.form.phonePlaceholder' | translate" required
               class="mt-1 w-full border border-gray-300 rounded-md px-4 py-2 focus:ring-[#1d3557] focus:border-[#1d3557]">
           </div>
         </div>
 
         <div>
-          <label class="block text-sm font-medium text-gray-700">Email</label>
-          <input type="email" name="Email" placeholder="Email (ixtiyoriy)"
+          <label class="block text-sm font-medium text-gray-700">
+            {{ 'contactPage.form.email' | translate }}
+          </label>
+          <input type="email" name="Email" [placeholder]="'contactPage.form.emailPlaceholder' | translate"
             class="mt-1 w-full border border-gray-300 rounded-md px-4 py-2 focus:ring-[#1d3557] focus:border-[#1d3557]">
         </div>
 
         <div>
-          <label class="block text-sm font-medium text-gray-700">Xabar</label>
-          <textarea name="Xabar" rows="5" placeholder="Xabaringizni yozing" required
+          <label class="block text-sm font-medium text-gray-700">
+            {{ 'contactPage.form.message' | translate }}
+          </label>
+          <textarea name="Xabar" rows="5" [placeholder]="'contactPage.form.messagePlaceholder' | translate" required
             class="mt-1 w-full border border-gray-300 rounded-md px-4 py-2 focus:ring-[#1d3557] focus:border-[#1d3557]"></textarea>
         </div>
 
         <div class="text-center lg:text-right">
           <button type="submit"
             class="bg-[#1d3557] text-white px-6 py-2 rounded-md hover:bg-[#16324e] transition-all font-semibold shadow-lg">
-            Yuborish
+            {{ 'contactPage.form.submit' | translate }}
           </button>
         </div>
       </form>

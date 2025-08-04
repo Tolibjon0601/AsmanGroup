@@ -1,33 +1,59 @@
-<footer class="relative py-20 px-4 bg-cover bg-center text-white"  style="background-image: url('assets/image/footer-bg.jpg');">
-
+<footer
+  class="relative py-20 px-4 bg-cover bg-center text-white"
+  style="background-image: url('assets/image/footer-bg.jpg')"
+>
   <!-- Gradient Overlay -->
-  <div class="absolute inset-0  z-0 bg-gradient-to-tr from-[#07223c]/90 to-[#0A4F6B]/85"></div>
+  <div
+    class="absolute inset-0 z-0 bg-gradient-to-tr from-[#07223c]/90 to-[#0A4F6B]/85"
+  ></div>
 
   <!-- Content -->
   <div class="relative z-10 max-w-7xl mx-auto px-4 py-16">
     <div class="grid grid-cols-1 lg:grid-cols-4 gap-10">
-
       <!-- Contact -->
       <div>
         <img src="assets/image/favicon.png" alt="Logo" class="h-20 mb-4" />
-        <h2 class="text-xl font-bold mb-3">Aloqa</h2>
-        <p class="text-sm uppercase mb-1">Telefon</p>
-        <a href="tel:+998883701111" class="block text-lg font-semibold hover:text-[#C4751A]">
+        <h2 class="text-xl font-bold mb-3">
+          {{ "footer.contact" | translate }}
+        </h2>
+        <p class="text-sm uppercase mb-1">{{ "footer.phone" | translate }}</p>
+        <a
+          href="tel:+998883701111"
+          class="block text-lg font-semibold hover:text-[#C4751A]"
+        >
           +998 88 370 11 11
         </a>
         <p class="mt-4 text-sm leading-relaxed">
-          Chilonzor tumani, Qatortol ko'chasi<br />Mo'ljal: Parus savdo markazi
+          {{ "footer.address" | translate }}
         </p>
       </div>
 
       <!-- Email -->
       <div>
-        <h2 class="text-xl font-bold mb-3">Pochta manzil</h2>
-        <a [href]="'mailto:' + email" class="text-lg font-semibold mb-4 block">{{ email }}</a>
+        <h2 class="text-xl font-bold mb-3">
+          {{ "footer.emailTitle" | translate }}
+        </h2>
+        <a
+          [href]="'mailto:' + email"
+          class="text-lg font-semibold mb-4 block"
+          >{{ email }}</a
+        >
         <div class="flex space-x-4 text-xl mt-4">
-          <a href="#" class="hover:text-[#C4751A]"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.instagram.com/asmangroup/" target="_blank" class="hover:text-[#C4751A]"><i class="fab fa-instagram"></i></a>
-          <a href="https://t.me/ORZULAR_MASKANI_UZ" target="_blank" class="hover:text-[#C4751A]"><i class="fab fa-telegram"></i></a>
+          <a href="#" class="hover:text-[#C4751A]"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/asmangroup/"
+            target="_blank"
+            class="hover:text-[#C4751A]"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://t.me/ORZULAR_MASKANI_UZ"
+            target="_blank"
+            class="hover:text-[#C4751A]"
+            ><i class="fab fa-telegram"></i
+          ></a>
         </div>
       </div>
 
@@ -42,10 +68,19 @@
 
   <!-- Bottom Strip -->
   <div class="relative z-10 border-t border-white/10">
-    <div class="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-300 gap-2 text-center">
-      <p>© {{ currentYear }} – BARCHA HUQUQLAR HIMOYALANGAN</p>
+    <div
+      class="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-300 gap-2 text-center"
+    >
+      <p>© {{ currentYear }} – {{ "footer.rights" | translate }}</p>
       <p>
-        Sayt <a href="https://isbd.uz/" target="_blank" class="text-white font-semibold hover:text-[#C4751A]">SBD</a> tomonidan ishlab chiqilgan
+        {{ "footer.developedBy" | translate }}
+        <a
+          href="https://isbd.uz/"
+          target="_blank"
+          class="text-white font-semibold hover:text-[#C4751A]"
+        >
+          {{ "footer.developer" | translate }}
+        </a>
       </p>
     </div>
   </div>

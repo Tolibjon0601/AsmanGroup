@@ -26,37 +26,31 @@
     <!-- Text -->
     <div class="lg:w-1/2 space-y-6 text-white">
       <h2 class="text-3xl md:text-4xl font-bold tracking-[0.2em] uppercase">
-        LOYIHA HAQIDA
+        {{ 'projectPage.aboutProject' | translate }}
       </h2>
       <div class="space-y-4">
         <p>
-          "Orzular Maskani" – har bir chiziqda sof g'oyaning mujassamlanishi!
+          {{ 'projectPage.aboutParagraph1' | translate }}
         </p>
         <p>
-          Bu yerda har bir detal – dastlabki g'oyadan tortib, benuqson
-          ijrosigacha – zargarlik aniqligi bilan o'ylangan. Biz orzuingizdagi
-          uyni quramiz, bu yerda mahorat va ilhom birlashib, ideal makonni
-          yaratadi. "Orzular Maskani" – orzudan tug'ilgan va mukammallik bilan
-          ro'yobga chiqqan turar-joy majmuasidir.
-        </p>
+          {{ 'projectPage.aboutParagraph2' | translate }}        </p>
       </div>
       <!-- Stats -->
       <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 font-semibold">
         <div>
           <div class="text-3xl font-bold">8</div>
-          <div>Bloklar</div>
-        </div>
+          <div>{{ 'projectPage.blocks' | translate }}</div>        </div>
         <div>
           <div class="text-3xl font-bold">776</div>
-          <div>Xonadonlar</div>
+          <div>{{ 'projectPage.apartments' | translate }}</div>
         </div>
         <div>
           <div class="text-3xl font-bold">3</div>
-          <div>Navbatlar</div>
+          <div>{{ 'projectPage.phases' | translate }}</div>
         </div>
         <div>
           <div class="text-3xl font-bold">30 000</div>
-          <div>m², loyiha maydoni</div>
+          <div>{{ 'projectPage.area' | translate }}</div>
         </div>
       </div>
     </div>
@@ -105,9 +99,9 @@
           >ORZULAR MASKANI</span
         >
         <div class="mt-6 text-lg">
-          <p class="text-5xl font-bold">{{ slide.stats }}</p>
+          <p class="text-5xl font-bold">{{ slide.stats | translate }}</p>
           <p class="text-white text-base max-w-md mt-2">
-            {{ slide.statsDescription }}
+            {{ slide.statsDescription | translate }}
           </p>
         </div>
       </div>
@@ -161,35 +155,40 @@
     <div class="p-6">
       <ul class="space-y-3 text-sm text-gray-700">
         <li class="flex justify-between border-b border-dotted pb-2">
-          <span>Kvartira raqami</span><strong>{{ apt.number }}</strong>
+          <span>{{ 'projectPage.apartmentList.number' | translate }}</span>
+          <strong>{{ apt.number }}</strong>
         </li>
         <li class="flex justify-between border-b border-dotted pb-2">
-          <span>Maydon</span><strong>{{ apt.area }}</strong>
+          <span>{{ 'projectPage.apartmentList.size' | translate }}</span>
+          <strong>{{ apt.area }}</strong>
         </li>
         <li class="flex justify-between border-b border-dotted pb-2">
-          <span>Xonalar</span><strong>{{ apt.rooms }}</strong>
+          <span>{{ 'projectPage.apartmentList.rooms' | translate }}</span>
+          <strong>{{ apt.rooms }}</strong>
         </li>
         <li class="flex justify-between border-b border-dotted pb-2">
-          <span>Qavat</span><strong>{{ apt.floor }}</strong>
+          <span>{{ 'projectPage.apartmentList.floor' | translate }}</span>
+          <strong>{{ apt.floor }}</strong>
         </li>
         <li class="flex justify-between border-b border-dotted pb-2">
-          <span>Topshirish yili</span><strong>{{ apt.year }}</strong>
+          <span>{{ 'projectPage.apartmentList.year' | translate }}</span>
+          <strong>{{ apt.year }}</strong>
         </li>
         <li class="flex justify-between pb-2">
-          <span>Loyiha</span
-          ><strong
-            ><a class="text-blue-600 hover:underline">{{
-              apt.project.name
-            }}</a></strong
-          >
+          <span>{{ 'projectPage.apartmentList.project' | translate }}</span>
+          <strong>
+            <a class="text-blue-600 hover:underline">
+              {{ apt.project.name }}
+            </a>
+          </strong>
         </li>
       </ul>
       <a
         routerLink="/about"
         class="mt-4 inline-flex items-center text-[#C4751A] hover:underline font-medium"
       >
-        Batafsil
-        <svg
+      {{ 'projectPage.more' | translate }}
+      <svg
           class="w-4 h-4 ml-1"
           fill="none"
           stroke="currentColor"

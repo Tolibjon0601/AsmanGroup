@@ -39,33 +39,35 @@ export class HomeComponent  implements AfterViewInit {
     }
   ];
 
-
+  icons = [
+    'fas fa-city',
+    'fas fa-paint-roller',
+    'fas fa-user-tie',
+    'fas fa-shield-alt',
+    'fas fa-child',
+    'fas fa-hands-helping'
+  ];
   slidessecond = [
     {
       stats: "20+",
-      statsDescription:
-        "Biznes, komfort va ekonom darajadagi eng qulay joylashuvga ega bo‘lgan turar-joy majmualari allaqachon foydalanishga topshirilgan.",
-
-      button: "Batafsil",
+      statsDescription: "statsSlider.slide1.description",
+      button: "statsSlider.slide1.button",
       image: "assets/image/slider_4.jpg"
     },
     {
       stats: "25+",
-      statsDescription:
-        "Yangi loyihalarimizda yashash uchun barcha qulayliklar mavjud — maktablar, bog‘chalar, savdo nuqtalari va yashil hududlar.",
-
-      button: "Bogʻlanish",
+      statsDescription: "statsSlider.slide2.description",
+      button: "statsSlider.slide2.button",
       image: "assets/image/slider_5.jpg"
     },
     {
       stats: "30+",
-      statsDescription:
-        "Ko‘p yillik tajribamiz asosida har bir mijoz uchun eng qulay va ishonchli yechimlarni taqdim etamiz.",
-
-      button: "Bogʻlanish",
+      statsDescription: "statsSlider.slide3.description",
+      button: "statsSlider.slide3.button",
       image: "assets/image/slider_6.jpg"
     }
   ];
+
 ngAfterViewInit(): void {
   const swiperEl: any = document.querySelector('swiper-container');
 

@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { AfterViewInit, CUSTOM_ELEMENTS_SCHEMA, Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 import { ImageModule } from 'primeng/image';
 
 @Component({
   selector: 'app-project',
-  imports: [CommonModule,RouterLink,ImageModule],
+  imports: [CommonModule,RouterLink,ImageModule,TranslateModule],
   templateUrl: './project.component.html',
   styleUrl: './project.component.scss',
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -22,30 +23,25 @@ export class ProjectComponent implements AfterViewInit {
   ];
   slidessecond = [
     {
-      stats: "WORKOUT ZONASI VA YUGIRISH UCHUN YO'LAKLAR",
-      statsDescription:
-      "Sog'lom turmush tarzini qadrlovchilar uchun turar-joy majmuasi hududida katta workout zona, ko'p funksiyali sport maydonchasi va hovli perimetri bo'ylab yugurish yo'lagi mavjud.",
-
-      button: "Batafsil",
+      stats: "projectPage.slides.0.title",
+      statsDescription: "projectPage.slides.0.description",
+      button: "projectPage.slides.0.button",
       image: "assets/image/workaout.jpg"
     },
     {
-      stats: "LAUNJ ZONALAR",
-      statsDescription:
-        "Bu yerda go'zal hovli muhitidan zavq olib, yolg'izlikda hordiq chiqarish va yoqimli suhbatlar uchun zamonaviy launj zonalar joriy etilgan.",
-
-      button: "Bogʻlanish",
+      stats: "projectPage.slides.1.title",
+      statsDescription: "projectPage.slides.1.description",
+      button: "projectPage.slides.1.button",
       image: "assets/image/slider_3.jpg"
     },
     {
-      stats: "AVTOTURARGOH",
-      statsDescription:
-        "Orzular Maskani nafaqat siz, balki avtomobilingiz uchun ham qulay joy bo'ladi. Videokuzatuv tizimiga ega qo‘riqlanadigan avtoturargoh avtomobilingiz xavfsizligini kafolatlaydi. Avtoturargohda elektromobil egalari uchun zaryadlash stansiyalari uchun maxsus joylar mavjud.",
-
-      button: "Bogʻlanish",
+      stats: "projectPage.slides.2.title",
+      statsDescription: "projectPage.slides.2.description",
+      button: "projectPage.slides.2.button",
       image: "assets/image/aftoturargoh.jpg"
     }
   ];
+
   ngAfterViewInit(): void {
     const swiperEl: any = document.querySelector('swiper-container');
 

@@ -17,6 +17,157 @@
     "button3": "Batafsil maʼlumot",
     "button4": "Batafsil maʼlumot",
     "button5": "Batafsil maʼlumot"
+  },
+
+  "statsSlider": {
+    "slide1": {
+      "description": "Biznes, komfort va ekonom darajadagi eng qulay joylashuvga ega bo‘lgan turar-joy majmualari allaqachon foydalanishga topshirilgan.",
+      "button": "Batafsil"
+    },
+    "slide2": {
+      "description": "Yangi loyihalarimizda yashash uchun barcha qulayliklar mavjud — maktablar, bog‘chalar, savdo nuqtalari va yashil hududlar.",
+      "button": "Bogʻlanish"
+    },
+    "slide3": {
+      "description": "Ko‘p yillik tajribamiz asosida har bir mijoz uchun eng qulay va ishonchli yechimlarni taqdim etamiz.",
+      "button": "Bogʻlanish"
+    }
+  },
+  "complexes": {
+    "label": "Obyektlar",
+    "title": "Turar-joy komplekslari"
+  },
+  "projects": {
+    "title": "Orzular Maskani",
+    "location": "Chilonzor tumani, Qatortol ko’chasi",
+    "comingSoon": "Tez kunda yangi loyiha"
+  },
+  "advantages": {
+    "title": "Bizning afzalliklarimiz",
+    "subtitle": "Nima uchun bizni tanlash kerak",
+    "items": [
+      {
+        "title": "Infratuzilma",
+        "description": "Bizning uylarda barcha yutuqlarini o'zida jamlagan mutlaqo yangi va zamonaviy shahar infratuzilmasi rivojlanmoqda."
+      },
+      {
+        "title": "Dizayn va bezatish",
+        "description": "Kirish guruhlarining loyihasi va dizayni butun turar-joy majmuasi arxitekturasining uyg'un davomi va muhiti timsoli bo'lib xizmat qiladi."
+      },
+      {
+        "title": "Professional xizmatlar",
+        "description": "Biz har bir mijozga turar joy tanlashda uning imkoniyatlari va istaklarini inobatga olgan holda individual yondoshamiz."
+      },
+      {
+        "title": "Xavfsizlik",
+        "description": "24 soatlik videokuzatuv xavfsizlik, tinchlik va osoyishtalikni ta'minlaydi."
+      },
+      {
+        "title": "O'yin maydoni",
+        "description": "Transport vositalari hovliga kira olmaydi. Bu farzandlaringiz uchun havfsiz o‘yin muhitini ta’minlaydi."
+      },
+      {
+        "title": "Shaxsiy xizmatlar",
+        "description": "Turar joy uchun shaxsiy xizmatlar (JEK) tashkil etiladi. Bu sizni vaqtingizni tejashga yordam beradi."
+      }
+    ]
+  },
+  "about": {
+    "sectionLabel": "Biz haqimizda",
+    "sectionTitle": "ASMAN GROUP – bu nafaqat uy quruvchi kompaniya, bu – yuksak did, aniqlik va ishonch asosida qurilgan hayot tarzi. Brend 2025-yilda zamonaviy, xavfsiz va estetik uy-joylarga talab ortib borayotgan davrda tashkil etilgan. ASMAN GROUP boshidan boshlab bitta aniq tamoyilga amal qilgan: uy – bu faqatgina devor va tom emas, balki orzular poydevori.",
+    "sectionText": "Brend nomi — “ASMAN”, turkiy tillarda “osmon” ma’nosini bildiradi. Bu so‘z biz uchun shunchaki nom emas — bu falsafa. Biz qurayotgan har bir uy osmon kabi keng, yorugʻ va ishonchli boʻlishi kerak. Har bir detal — tashqi fasad dizaynidan tortib ichki rejalashtirishgacha — asosiy, funksional va didli boʻlishi shart. Komfort darajasidagi turar-joy majmualari, Premium darajadagi loyihalari, shuningdek tijoriy (savdo) ko‘chmas mulk – qurilishga doir barcha bozor segmentlarida developmentning to’liq siklini amalga oshirib kelmoqda.",
+
+    "card1": {
+      "title": "Kompaniya yutuqlari",
+      "desc": "BM GROUP, nafaqat mintaqada balki O'zbekiston ko'chmas mulk bozorida o'zining nufuzli mavqeini saqlab qolishga, balki asosiy novator bo'lishga ham intiladi."
+    },
+    "card2": {
+      "title": "Bizning maqsad",
+      "desc": "Biz hamisha faqat oldinga – istiqbolga intilamiz, takomillashamiz va shubxasiz rivojlanamiz."
+    },
+    "card3": {
+      "title": "Sertifikat",
+      "desc": "O'zbekiston developerlari orasida biz birinchilardan bo'lib 5 marotaba Muvofiqlik Sertifikati oldik."
+    },
+    "readMore": "Batafsil",
+
+    "title": "Biz haqimizda",
+    "breadcrumb": "Biz haqimizda",
+    "home": "Bosh sahifa",
+    "sectionTitle1": "ASMAN GROUP haqida qisqacha",
+    "description1": "ASMAN GROUP – bu O‘zbekistonda zamonaviy va sifatli qurilish yechimlarini taqdim etib kelayotgan ishonchli kompaniya.",
+    "description2": "2013-yildan buyon biz turli toifadagi uy-joylar, tijoriy binolar va zamonaviy infratuzilma loyihalarini muvaffaqiyatli amalga oshirib kelmoqdamiz.",
+    "description3": "Qurilish va development sohasidagi ko‘p yillik tajriba bizga nafaqat ishonchli hamkorlik, balki mijozlarimizga qulay va zamonaviy hayot tarzini taqdim etish imkonini berdi. Bugungi kunga kelib, ASMAN GROUP O‘zbekistonning eng faol va barqaror kompaniyalaridan biriga aylandi.",
+    "description4": "Biz sifat, dizayn va innovatsiyaga doimiy e’tibor qaratamiz. Mijozlarimiz ishonchini qadrlagan holda, har bir loyihamizda mukammallikka intilamiz va doimiy rivojlanishni ustuvor yo‘nalish deb bilamiz.",
+    "highlightTitle": "10 yillik tajriba – zamonaviy qurilish yechimlari",
+    "highlightText": "«Asman Group» 500 ming kvadrat metr maydonda 20 ta obyektga ega bo’lib, ularda 5000 mingdan ortiq aholi istiqomat qiladi.",
+    "projectTitle": "Orzular Maskani",
+    "projectDescription": "Toshkent shahrining markaziy hududi – Chilonzor tumanida joylashgan zamonaviy turar-joy majmuasi. Har bir bino 2 tadan zamonaviy lift, xavfsizlik skaneri va domofon tizimi bilan jihozlangan. Orzular Maskani majmuasi 2026-yilning birinchi choragida foydalanishga topshiriladi.",
+    "galleryTitle": "Loyihalarimizdan lavhalar"
+  },
+  "projectPage": {
+    "heroTitle": "Orzular Maskani",
+    "heroSubtitle": "Business class by Asman Group",
+    "aboutProject": "Loyiha haqida",
+    "aboutParagraph1": "\"Orzular Maskani\" – har bir chiziqda sof g'oyaning mujassamlanishi!",
+    "aboutParagraph2": "Bu yerda har bir detal – dastlabki g'oyadan tortib, benuqson ijrosigacha – zargarlik aniqligi bilan o'ylangan. Biz orzuingizdagi uyni quramiz, bu yerda mahorat va ilhom birlashib, ideal makonni yaratadi. \"Orzular Maskani\" – orzudan tug'ilgan va mukammallik bilan ro'yobga chiqqan turar-joy majmuasidir.",
+    "blocks": "Bloklar",
+    "apartments": "Xonadonlar",
+    "phases": "Navbatlar",
+    "area": "m², loyiha maydoni",
+    "badge": "Orzular Maskani",
+    "more": "Batafsil",
+    "slides": [
+      {
+        "title1": "WORKOUT ZONASI VA YUGIRISH UCHUN YO'LAKLAR",
+        "description": "Sog'lom turmush tarzini qadrlovchilar uchun turar-joy majmuasi hududida katta workout zona, ko'p funksiyali sport maydonchasi va hovli perimetri bo'ylab yugurish yo'lagi mavjud.",
+        "button": "Batafsil"
+      },
+      {
+        "title": "LAUNJ ZONALAR",
+        "description": "Bu yerda go'zal hovli muhitidan zavq olib, yolg'izlikda hordiq chiqarish va yoqimli suhbatlar uchun zamonaviy launj zonalar joriy etilgan.",
+        "button": "Bogʻlanish"
+      },
+      {
+        "title": "AVTOTURARGOH",
+        "description": "Orzular Maskani nafaqat siz, balki avtomobilingiz uchun ham qulay joy bo'ladi. Videokuzatuv tizimiga ega qo‘riqlanadigan avtoturargoh avtomobilingiz xavfsizligini kafolatlaydi. Avtoturargohda elektromobil egalari uchun zaryadlash stansiyalari uchun maxsus joylar mavjud.",
+        "button": "Bogʻlanish"
+      }
+    ],
+    "apartmentList": {
+      "number": "Kvartira raqami",
+      "size": "Maydon",
+      "rooms": "Xonalar",
+      "floor": "Qavat",
+      "year": "Topshirish yili",
+      "project": "Loyiha"
+    }
+  },
+  "contactPage": {
+    "title": "Biz bilan bog'lanish",
+    "home": "Bosh sahifa",
+    "breadcrumb": "Aloqa",
+    "form": {
+      "name": "Ism",
+      "namePlaceholder": "Ismingiz",
+      "phone": "Telefon",
+      "phonePlaceholder": "+998 __ ___ __ __",
+      "email": "Email",
+      "emailPlaceholder": "Email (ixtiyoriy)",
+      "message": "Xabar",
+      "messagePlaceholder": "Xabaringizni yozing",
+      "submit": "Yuborish"
+    }
   }
+,
+"footer": {
+  "contact": "Aloqa",
+  "phone": "Telefon",
+  "address": "Chilonzor tumani, Qatortol ko'chasi\nMo'ljal: Parus savdo markazi",
+  "emailTitle": "Pochta manzil",
+  "rights": "BARCHA HUQUQLAR HIMOYALANGAN",
+  "developedBy": "Sayt",
+  "developer": "SBD"
+}
 
 }

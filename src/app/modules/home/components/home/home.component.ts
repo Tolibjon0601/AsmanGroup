@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { AfterViewInit, CUSTOM_ELEMENTS_SCHEMA, Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-home',
-  imports: [CommonModule,RouterLink],
+  imports: [CommonModule,RouterLink,TranslateModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -12,28 +13,28 @@ import { RouterLink } from '@angular/router';
 export class HomeComponent  implements AfterViewInit {
   slides = [
     {
-      title: 'Yangi uy – yangi hayot! 100% to‘lovda 1 kv.m narxi atigi 7 990 000 so‘mdan boshlanadi',
-      button: 'Batafsil maʼlumot',
+      title: 'slider.title1',
+      button: 'slider.button1',
       image: 'assets/image/slider_1.jpg'
     },
     {
-      title: 'Asman Group – sifatli qurilish va zamonaviy arxitektura timsoli!',
-      button: 'Loyihalar bilan tanishing',
+      title: 'slider.title2',
+      button: 'slider.button2',
       image: 'assets/image/slider_2.jpg'
     },
     {
-      title: 'Orzuyingizdagi xonadonni toping! Bo‘lib-bo‘lib to‘lash imkoniyati mavjud',
-      button: 'Batafsil maʼlumot',
+      title: 'slider.title3',
+      button: 'slider.button3',
       image: 'assets/image/slider_3.jpg'
     },
     {
-      title: 'Biz bilan barqaror investitsiya va ishonchli uy-joy!',
-      button: 'Batafsil maʼlumot',
+      title: 'slider.title4',
+      button: 'slider.button4',
       image: 'assets/image/slider_4.jpg'
     },
     {
-      title: 'Yangi turar joy majmualari: qulay joylashuv, xavfsizlik va zamonaviylik',
-      button: 'Batafsil maʼlumot',
+      title: 'slider.title5',
+      button: 'slider.button5',
       image: 'assets/image/slider_5.jpg'
     }
   ];

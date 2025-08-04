@@ -4,5 +4,19 @@
     "about": "Biz haqimizda",
     "contact": "Aloqa",
     "projects": "Loyihalar"
+  },
+  "slider": {
+    "title1": "Yangi uy – yangi hayot! 100% to‘lovda 1 kv.m narxi atigi 7 990 000 so‘mdan boshlanadi",
+    "title2": "Asman Group – sifatli qurilish va zamonaviy arxitektura timsoli!",
+    "title3": "Orzuyingizdagi xonadonni toping! Bo‘lib-bo‘lib to‘lash imkoniyati mavjud",
+    "title4": "Biz bilan barqaror investitsiya va ishonchli uy-joy!",
+    "title5": "Yangi turar joy majmualari: qulay joylashuv, xavfsizlik va zamonaviylik",
+
+    "button1": "Batafsil maʼlumot",
+    "button2": "Loyihalar bilan tanishing",
+    "button3": "Batafsil maʼlumot",
+    "button4": "Batafsil maʼlumot",
+    "button5": "Batafsil maʼlumot"
   }
+
 }
